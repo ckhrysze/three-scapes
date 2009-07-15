@@ -64,6 +64,9 @@ class ParserTest(unittest.TestCase):
         self.assertEquals(['Dynon'], area.creators)
         self.assertEquals(["Science", "Newbieland"], area.realms)
 
+    def testScan(self):
+        areas = area_parser.scan(small_area_list.split("\n"))
+        self.assertEquals(43, len(areas))
 
 small_area_list = """
                             Areas of 3 Kingdoms

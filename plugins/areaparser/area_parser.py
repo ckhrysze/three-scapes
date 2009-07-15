@@ -1,4 +1,7 @@
 import re
+from mockworld import World
+
+world = World()
 
 class Area(object):
     def __init__(self, creators, name, realms, closed, defunct):
@@ -22,7 +25,7 @@ def parse(lines):
         name += line[29:64] + " "
         realms += line[65:] + " "
 
-    area_creators = [creator.strip() for creator in creators.strip().split()]
+    area_creators = [creator.strip() for creator in re.split("\W+", creators.strip())]
     while 'and' in area_creators: area_creators.remove('and')
 
     area_realms = [realm.strip() for realm in realms.strip().split()]
@@ -38,5 +41,19 @@ def parse(lines):
     return Area(area_creators, name.strip(), area_realms, closed, defunct)
 
 def scan(lines):
-    entry = re.compile("\s*\d+\.\s+\w+.*")
-    more = re.compile("More: \d+-\d+\(\d+\).*")
+    entry = re.compile("^\s*\d+\.\s+\w+.*$")
+    more = re.compile("^More: \d+-\d+\(\d+\).*$")
+    end = re.compile("^>\s+$")
+
+    areas = []
+    area_lines = []
+    for line in lines:
+        if end.match(line) or more.match(line):
+            print "matched end or more"
+            if len(area_lines) > 0: areas.append(parse(area_lines))
+        elif entry.match(line):
+            if len(area_lines) > 0: areas.append(parse(area_lines))
+            area_lines = [line]
+        else:
+            if len(area_lines) > 0: area_lines.append(line)
+    return areas
