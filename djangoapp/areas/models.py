@@ -1,10 +1,10 @@
 from django.db import models
 
 class Wizard(models.Model):
-    name = CharField(max_length=300)
+    name = models.CharField(max_length=300)
 
 class Realm(models.Model):
-    name = CharField(max_length=300)
+    name = models.CharField(max_length=300)
 
 class Room(models.Model):
     title = models.CharField(max_length=300)
@@ -21,11 +21,11 @@ class Map(models.Model):
     start = models.ForeignKey(Room)
 
 class Area(models.Model):
-    name = CharField(max_length=300)
-    creators = ManyToManyField('Wizard')
-    realms = ManyToManyField('Realm')
-    rating = models.CharField(max_length=300)
-    directions = models.CharField(max_length=300)
-    areamap = models.ForeignKey(""
-    defunct = BooleanField(default = False)
-    closed = BooleanField(default = False)
+    name = models.CharField(max_length=300)
+    creators = models.ManyToManyField('Wizard', blank=True)
+    realms = models.ManyToManyField('Realm', blank=True)
+    rating = models.CharField(max_length=300, blank=True)
+    directions = models.CharField(max_length=300, blank=True)
+    areamap = models.ForeignKey("Map", blank=True, null=True)
+    defunct = models.BooleanField(default = False)
+    closed = models.BooleanField(default = False)

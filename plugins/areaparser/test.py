@@ -64,6 +64,12 @@ class ParserTest(unittest.TestCase):
         self.assertEquals(['Dynon'], area.creators)
         self.assertEquals(["Science", "Newbieland"], area.realms)
 
+    def testSampleFile(self):
+        f = open("all_areas.txt", "r")
+        buffer = f.readline().split("\r")
+        areas = area_parser.scan(buffer)
+        self.assertEquals(651, len(areas))
+
     def testScan(self):
         areas = area_parser.scan(small_area_list.split("\n"))
         self.assertEquals(43, len(areas))
@@ -133,4 +139,4 @@ More: 160-239(694) [q,b,<cr>]
 """
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(1, 2, 3)

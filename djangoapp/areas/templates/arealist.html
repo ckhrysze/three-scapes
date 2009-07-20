@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<table>
+  <caption>3K Areas</caption>
+  <tr>
+    <td>Name</td>
+    <td>Creators</td>
+    <td>Realms</td>
+    <td>Rating</td>
+    <td>Directions</td>
+  </tr>
+  {% for area in areas %}
+  <tr>
+    <td>{{ area.name }}</td>
+    <td>{{ area.creators }}</td>
+    <td>{{ area.realms }}</td>
+    <td>{{ area.rating }}</td>
+    <td>{{ area.directions }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

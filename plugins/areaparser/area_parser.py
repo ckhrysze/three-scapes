@@ -49,7 +49,6 @@ def scan(lines):
     area_lines = []
     for line in lines:
         if end.match(line) or more.match(line):
-            print "matched end or more"
             if len(area_lines) > 0: areas.append(parse(area_lines))
         elif entry.match(line):
             if len(area_lines) > 0: areas.append(parse(area_lines))
