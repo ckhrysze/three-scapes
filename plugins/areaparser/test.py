@@ -11,6 +11,7 @@ class ParserTest(unittest.TestCase):
         self.assertEquals("B Sharp Jazz Club", area.name)
         self.assertEquals(["Adalius"], area.creators)
         self.assertEquals(["Chaos"], area.realms)
+        print area.to_django_json()
 
     def testDualCreator(self):
         lines = [
@@ -139,4 +140,4 @@ More: 160-239(694) [q,b,<cr>]
 """
 
 if __name__ == '__main__':
-    unittest.main(1, 2, 3)
+    unittest.main()

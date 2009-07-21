@@ -33,6 +33,8 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
+STATIC_DOC_ROOT = 'C:/Users/ckhrysze/code/three-scapes/static/'
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = ''
@@ -45,7 +47,7 @@ MEDIA_URL = ''
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/admin-media/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '+w5admbjx-el4lf-%)zuswl@dkwd6!1041h9))nck58l9z=_jb'
@@ -79,3 +81,8 @@ INSTALLED_APPS = (
     'main',
     'areas',
 )
+
+try:
+    from local_settings import *
+except ImportError:
+    print u'Using default(dev) settings.'

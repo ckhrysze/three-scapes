@@ -1,23 +1,55 @@
 {% extends 'base.html' %}
 
+{% block scripts %}
+<script type="text/javascript" src="/static/js/jquery-1.3.2.min.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.tablesorter.js"></script>
+<script type="text/javascript">
+$(document).ready(function() { 
+    $("#area_table").tablesorter();
+    alert("loaded?")
+});
+</script>
+{% endblock %}
+
 {% block body %}
-<table>
+<table id="area_table">
   <caption>3K Areas</caption>
-  <tr>
-    <td>Name</td>
-    <td>Creators</td>
-    <td>Realms</td>
-    <td>Rating</td>
-    <td>Directions</td>
-  </tr>
-  {% for area in areas %}
-  <tr>
-    <td>{{ area.name }}</td>
-    <td>{{ area.creators }}</td>
-    <td>{{ area.realms }}</td>
-    <td>{{ area.rating }}</td>
-    <td>{{ area.directions }}</td>
-  </tr>
-  {% endfor %}
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Creators</th>
+      <th>Realms</th>
+      <th>Closed</th>
+      <th>Defunct</th>
+      <th>Rating</th>
+      <th>Directions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for area in areas %}
+    <tr>
+      <td>{{ area.name }}</td>
+
+      <td>
+	{% for creator in area.creators.all %}
+	{{creator.name}}
+	{% if not forloop.last %}<br />{% endif %}
+	{% endfor %}
+      </td>
+
+      <td>
+	{% for realm in area.realms.all %}
+	{{realm.name}}
+	{% if not forloop.last %}<br />{% endif %}
+	{% endfor %}
+      </td>
+
+      <td>{{ area.closed }}</td>
+      <td>{{ area.defunct }}</td>
+      <td>{{ area.rating }}</td>
+      <td>{{ area.directions }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
 {% endblock %}

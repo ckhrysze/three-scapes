@@ -9,7 +9,11 @@ urlpatterns = patterns(
 
     (r'^area/list/', 'area_list'),
     (r'^area/create/', 'area_create'),
-    (r'^area/read/(?P<mapId>\d+)/', 'area_read'),
-    (r'^area/update/(?P<mapId>\d+)/', 'area_update'),
+    (r'^area/read/(?P<areaId>\d+)/', 'area_read'),
+    (r'^area/update/(?P<areaId>\d+)/', 'area_update'),
     (r'^area/delete/(?P<mapId>\d+)/', 'area_delete'),
+
+    (r'^wizard/get_or_create/(?P<name>\w+)/', 'wizard_get_or_create'),
+    (r'^realm/get_or_create/(?P<name>\w+)/', 'realm_get_or_create'),
+
 )

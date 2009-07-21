@@ -12,9 +12,9 @@ def area_list(request):
     return render_to_response('arealist.html', {'areas': areas})
 
 def area_create(request):
-    for area in serializers.deserialize("json", request.POST['json']):
-        area.object.id = None
-        area.save()
+    area = serializers.deserialize("json", request.POST['json']).next()
+    area.object.id = None
+    area.save()
     return HttpResponse(
         serializers.serialize('json', [area.object]),
         mimetype='application/json'
@@ -28,3 +28,19 @@ def area_update(request):
 
 def area_delete(request):
     return
+
+def wizard_get_or_create(request, name):
+    wizard, isNew = Wizard.objects.get_or_create(name=name)
+    wizard.save()
+    return HttpResponse(
+        serializers.serialize('json', [wizard]),
+        mimetype='application/json'
+        )
+
+def realm_get_or_create(request, name):
+    realm, isNew = Realm.objects.get_or_create(name=name)
+    realm.save()
+    return HttpResponse(
+        serializers.serialize('json', [realm]),
+        mimetype='application/json'
+        )
