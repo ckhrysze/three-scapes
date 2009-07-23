@@ -35,10 +35,11 @@ class Area(object):
                         "fields": {"name": wizard,} } ])
             response = self.sendRequest(
                 json,
-                "http://localhost:8000/areas/wizard/get_or_create/%s/" % (wizard))
+                "http://ckhrysze.net/areas/wizard/get_or_create/%s/" % (wizard))
             if response:
                 obj = simplejson.loads(response.readline())[0]
                 creators.append(obj['pk'])
+                response.close()
         return creators
 
     def submitRealms(self):
@@ -49,10 +50,11 @@ class Area(object):
                         "fields": {"name": realm,} } ])
             response = self.sendRequest(
                 json,
-                "http://localhost:8000/areas/realm/get_or_create/%s/" % (realm))
+                "http://ckhrysze.net/areas/realm/get_or_create/%s/" % (realm))
             if response:
                 obj = simplejson.loads(response.readline())[0]
                 realms.append(obj['pk'])
+                response.close()
         return realms
 
     def submitArea(self, creators, realms):
@@ -66,7 +68,9 @@ class Area(object):
                     "closed": self.is_closed,
                     }}]
         json = simplejson.dumps(obj)
-        response = self.sendRequest(json, "http://localhost:8000/areas/area/create/")
+        response = self.sendRequest(json, "http://ckhrysze.net/areas/area/create/")
+        if response: response.close()
+
 
     def sendRequest(self, json, url):
         params = urllib.urlencode({"json": json})

@@ -8,6 +8,7 @@ from django.conf import settings
 urlpatterns = patterns('',
     # Example:
     (r'^areas/', include('areas.urls')),
+    (r'^bards/', include('bards.urls')),
 
     (r'^static/(?P<path>.*)$',
      'django.views.static.serve',

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+  .recall_entry {
+    width: 400px;
+    margin:auto;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="recall_entry">
+  <ul>
+    <li><a href="/bards/recall/areas/list/">Areas</a></li>
+    <li><a href="/bards/recall/armours/list/">Armours</a></li>
+    <li><a href="/bards/recall/items/list/">Items</a></li>
+    <li><a href="/bards/recall/miscs/list/">Misc</a></li>
+    <li><a href="/bards/recall/mobs/list/">Mobs</a></li>
+    <li><a href="/bards/recall/weapons/list/">Weapons</a></li>
+  </ul>
+</div>
+{% endblock %}

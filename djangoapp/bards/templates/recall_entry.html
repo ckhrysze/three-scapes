@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+  .recall_entry {
+    width: 400px;
+    margin:auto;
+    text-align: center;
+  }
+  .recall_entry table {
+    text-align: left;
+  }
+  .recall_entry div {
+    text-align: left;
+  }
+  td {
+    padding: 5px;
+  }
+  div {
+    margin: 10px;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="recall_entry">
+  <table>
+    {% for prop, value in entry.fields %}
+    <tr>
+      <td>{{ prop }}</td>
+      <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <div>
+    {{entry.notes}}
+  </div>
+
+  <div>
+    Links: {{entry.links}}
+  </div>
+</div>
+{% endblock %}

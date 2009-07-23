@@ -73,13 +73,17 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+SPHINX_API_VERSION = 0x113
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'south',
     'main',
     'areas',
+    'bards',
 )
 
 try:
