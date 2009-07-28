@@ -15,7 +15,7 @@ class Entry(object):
         json = simplejson.dumps(obj)
         response = self.sendRequest(
             json,
-            "http://localhost:8000/bards/recall/entry/create/")
+            "http://ckhrysze.net/bards/recall/entry/create/")
         if response: response.close()
 
     def sendRequest(self, json, url):
@@ -70,7 +70,7 @@ class EntryParser(object):
         json = simplejson.dumps(obj)
         response = self.sendRequest(
             json,
-            "http://ckhrysze.net/bards/recall/entry/create/")
+            "http://localhost:8000/bards/recall/entry/create/")
         if response: response.close()
 
 

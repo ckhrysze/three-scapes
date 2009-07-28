@@ -15,7 +15,7 @@
   <body>
     <div id="doc3"> 
       <div id="hd">{% block header %}{% endblock %}</div>  
-      <div id="bd">{% block body %}{% endblock %}</div>  
+      <div id="bd">{% block body %}{% block content %}{% endblock %}{% endblock %}</div>  
       <div id="ft">{% block footer %}{% endblock %}</div>  
     </div> 
   </body>

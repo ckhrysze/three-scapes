@@ -5,8 +5,10 @@ from django.conf import settings
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
-    # Example:
+urlpatterns = patterns(
+    '',
+    (r'^account/', include('django_authopenid.urls')),
+
     (r'^areas/', include('areas.urls')),
     (r'^bards/', include('bards.urls')),
 
@@ -20,5 +22,5 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
-    #(r'.*', 'main.views.index'),
+    (r'^$', 'main.views.index'),
 )

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+
+<muclient>
+  <plugin
+    name="KeyPadModes"
+    author="Ckhrysze"
+    id="dcc8f91bd3b67dbfcfa86f46"
+    language="Python"
+    purpose="Adapt the key pad to weird areas"
+    date_written="2009-07-27 17:22:00"
+    requires="4.37"
+    version="1.0"
+    >
+  </plugin>
+
+
+  <!--  Get our standard constants -->
+
+  <include name="constants.pys"/>
+
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   script="setDefaultMode"
+   match="kp_default"
+   enabled="y"
+   send_to="12"
+   sequence="900"
+  >
+  </alias>
+  <alias
+   script="setShipMode"
+   match="kp_ship"
+   enabled="y"
+   send_to="12"
+   sequence="901"
+  >
+  </alias>
+</aliases>
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+{{ py_script }}
+]]>
+</script>
+
+</muclient>
