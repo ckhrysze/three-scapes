@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- Saved on Wednesday, July 08, 2009, 5:23 PM -->
+<!-- MuClient version 4.37 -->
+
+<muclient>
+  <plugin
+     name="Revealer"
+     author="Ckhrysze"
+     id="dfb607702fe0e36920bf3b4a"
+     language="Python"
+     purpose="reveal items"
+     date_written="2008-02-15 19:43:19"
+     requires="4.14"
+     version="1.0"
+     >
+
+  </plugin>
+
+  <!--  Get our standard constants -->
+  <include name="constants.pys"/>
+
+
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   script="revealAll"
+   match="revealall *"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  </alias>
+  <alias
+   script="toggleRevealer"
+   match="toggle_revealer"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  </alias>
+</aliases>
+
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+{{ py_script }}
+]]>
+</script>
+
+</muclient>

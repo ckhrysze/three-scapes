@@ -1,0 +1,88 @@
+  1.  ( Not Done ) [  1  ]  Marbles               Not solved this reboot.
+  2.  ( Complete ) [* 5 *]  BBN Planet            Solved: 07:08:42.
+  3.  ( Not Done ) [  5  ]  Bug                   Solved: 17:00:26.
+  4.  ( Complete ) [* 5 *]  Chop Tree             Solved: 04:37:30.
+  5.  ( Complete ) [* 5 *]  Codename: Kodiak      Solved: 05:25:33.
+  6.  ( Not Done ) [  5  ]  Free Cho              Not solved this reboot.
+  7.  ( Complete ) [* 5 *]  Mack                  Solved: 21:29:35.
+  8.  ( Complete ) [* 5 *]  Newbie Academy        Solved: 04:41:58.
+  9.  ( Complete ) [* 5 *]  Ralintaro             Solved: 03:47:58.
+ 10.  ( Complete ) [* 5 *]  Resource Crisis       Solved: 01:18:32.
+ 12.  ( Complete ) [* 5 *]  The Browning Murders  Solved: 04:13:05.
+ 13.  ( Complete ) [* 5 *]  Tree                  Solved: 21:20:09.
+ 14.  ( Complete ) [* 8 *]  Twelve Princesses     Solved: 22:42:38.
+ 15.  ( Not Done ) [  10 ]  Arcanarton            Solved: 11:04:28.
+ 16.  ( Complete ) [* 10*]  Destroy Barney        Solved: 22:57:22.
+ 17.  ( Complete ) [* 10*]  Disney                Solved: 04:54:22.
+ 18.  ( Not Done ) [  10 ]  Djinni                Not solved this reboot.
+ 19.  ( Complete ) [* 10*]  Gameshow              Solved: 19:07:09.
+ 20.  ( Complete ) [* 10*]  Nightmare             Solved: 09:43:28.
+ 21.  ( Complete ) [* 10*]  NY Mugger             Not solved this reboot.
+ 22.  ( Not Done ) [  10 ]  Orc Slayer            Not solved this reboot.
+ 23.  ( Not Done ) [  10 ]  Rampart               Solved: 00:54:58.
+ 24.  ( Not Done ) [  10 ]  Sarkath Khan          Solved: 13:15:52.
+ 25.  ( Complete ) [* 10*]  Save Grandma!         Solved: 19:28:54.
+ 26.  ( Not Done ) [  10 ]  Schroedingers Cat     Solved: 02:53:34.
+ 27.  ( Complete ) [* 10*]  Spaceport             Solved: 11:22:36.
+ 29.  ( Not Done ) [  10 ]  Zetron                Not solved this reboot.
+ 30.  ( Complete ) [* 13*]  Lothlarian            Solved: 04:22:53.
+ 31.  ( Complete ) [* 15*]  Alphabet              Not solved this reboot.
+ 32.  ( Not Done ) [  15 ]  Boomer Rampage        Not solved this reboot.
+ 33.  ( Not Done ) [  15 ]  Hobgoblin             Not solved this reboot.
+ 34.  ( Not Done ) [  15 ]  Jack the Ripper       Not solved this reboot.
+ 35.  ( Not Done ) [  15 ]  Macabre Collector     Not solved this reboot.
+ 36.  ( Not Done ) [  17 ]  Perfection            Not solved this reboot.
+ 37.  ( Not Done ) [  20 ]  Ebonbane              Not solved this reboot.
+ 38.  ( Not Done ) [  20 ]  Free Stag             Not solved this reboot.
+ 39.  ( Not Done ) [  20 ]  Frozen Dude           Not solved this reboot.
+ 40.  ( Complete ) [* 20*]  Waldo                 Solved: 09:41:05.
+ 41.  ( Not Done ) [  25 ]  Accipiter             Solved: 15:06:33.
+ 42.  ( Complete ) [* 25*]  Attrition!            Not solved this reboot.
+ 44.  ( Not Done ) [  25 ]  Haunted Manor         Not solved this reboot.
+ 45.  ( Not Done ) [  25 ]  Heart of the Cosmos   Solved: 19:26:10.
+ 46.  ( Not Done ) [  25 ]  Katin                 Solved: 10:12:48.
+ 47.  ( Not Done ) [  25 ]  Larissa's Thingy      Solved: 19:15:04.
+ 48.  ( Not Done ) [  25 ]  Merciful Miller       Not solved this reboot.
+ 49.  ( Not Done ) [  25 ]  Nuke                  Solved: 18:05:15.
+ 50.  ( Not Done ) [  25 ]  Spire                 Not solved this reboot.
+ 51.  ( Complete ) [* 25*]  Whodunit              Not solved this reboot.
+ 52.  ( Not Done ) [  27 ]  Silver/Blue           Solved: 05:43:44.
+ 53.  ( Not Done ) [  27 ]  Van Richten           Not solved this reboot.
+ 54.  ( Not Done ) [  30 ]  Atlantis              Solved: 19:44:01.
+ 56.  ( Not Done ) [  30 ]  Hide and Seek         Not solved this reboot.
+ 57.  ( Not Done ) [  30 ]  Shadowrun             Not solved this reboot.
+ 59.  ( Not Done ) [  35 ]  Pub Crawl             Solved: 18:47:46.
+ 60.  ( Not Done ) [  35 ]  Scavenger Hunt        Not solved this reboot.
+ 63.  ( Not Done ) [  40 ]  Dragonball Z          Solved: 22:28:49.
+ 65.  ( Not Done ) [  40 ]  Hidden Treasure       Not solved this reboot.
+ 67.  ( Not Done ) [  40 ]  Kimlark               Not solved this reboot.
+ 68.  ( Not Done ) [  40 ]  Miyu                  Solved: 21:48:05.
+ 69.  ( Not Done ) [  40 ]  Ravenloft II          Solved: 16:58:25.
+ 70.  ( Not Done ) [  45 ]  Covenant              Solved: 20:06:15.
+ 71.  ( Not Done ) [  45 ]  Dragon Shell          Solved: 13:54:13.
+ 72.  ( Not Done ) [  45 ]  Mortal Kombat         Solved: 01:16:17.
+ 73.  ( Not Done ) [  45 ]  The Secret of Nimh    Solved: 14:11:03.
+ 75.  ( Not Done ) [  50 ]  Boomer Crisis         Not solved this reboot.
+ 76.  ( Not Done ) [  50 ]  Cernunnos             Not solved this reboot.
+ 77.  ( Not Done ) [  50 ]  Dragon Egg            Not solved this reboot.
+ 78.  ( Not Done ) [  55 ]  Ring of Power         Solved: 17:48:21.
+ 79.  ( Not Done ) [  55 ]  The Project           Not solved this reboot.
+ 80.  ( Not Done ) [  60 ]  Rutha-Al              Solved: 18:16:00.
+ 81.  ( Not Done ) [  65 ]  Megatech              Not solved this reboot.
+ 83.  ( Not Done ) [  70 ]  Prismatic Jewel       Not solved this reboot.
+ 84.  ( Not Done ) [  70 ]  Seahaven              Not solved this reboot.
+ 85.  ( Not Done ) [  73 ]  Kill Bahamut          Solved: 22:47:32.
+ 86.  ( Not Done ) [  75 ]  Mira                  Not solved this reboot.
+ 87.  ( Not Done ) [  75 ]  Perplexus             Not solved this reboot.
+ 88.  ( Not Done ) [  75 ]  Pyron                 Solved: 11:22:46.
+ 89.  ( Not Done ) [  80 ]  Dragon Knight         Solved: 16:46:39.
+ 91.  ( Not Done ) [  90 ]  Crystals of Ao        Solved: 07:37:04.
+ 92.  ( Not Done ) [  90 ]  Evil God              Solved: 20:40:56.
+ 94.  ( Not Done ) [  92 ]  Balooga Falls         Not solved this reboot.
+ 95.  ( Not Done ) [  95 ]  Wayhaven              Solved: 04:33:17.
+ 96.  ( Not Done ) [ 100 ]  Balance               Not solved this reboot.
+ 97.  ( Not Done ) [ 100 ]  Durskaen              Not solved this reboot.
+ 98.  ( Not Done ) [ 100 ]  Epic                  Not solved this reboot.
+ 99.  ( Not Done ) [ 100 ]  Keylon Crown          Solved: 13:59:53.
+100.  ( Not Done ) [ 100 ]  Miritar               Not solved this reboot.
+101.  ( Not Done ) [ 100 ]  Ravenloft             Not solved this reboot.

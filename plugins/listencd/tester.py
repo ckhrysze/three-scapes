@@ -7,9 +7,18 @@ import plugin_generator
 
 
 class PluginGeneratorTest(unittest.TestCase):
-    def testSomething(self):
-        world.note.assert_called_with("Found room North of Center")
-        world.WindowText.assert_called()
+    def testActivateOnListenCD(self):
+        plugin_generator.OnPluginSent("listen cd")
+        world.note.assert_called_with("Listen CD mode now active")
+
+    def testDectivateOnEnterDoorway(self):
+        plugin_generator.OnPluginSent("enter doorway")
+        world.note.assert_called_with("Listen CD mode now inactive")
+
+    def testPictSong(self):
+        plugin_generator.OnPluginSent("listen cd")
+        plugin_generator.OnPluginPacketReceived("A small dark cave somewhere in the Scottish highlands")
+        world.setcommand.assert_called_with("sing Several Species of Small Furry Animals Gathered Together in a Cave and Grooving with a Pict")
 
 def writePlugin(name):
     from jinja2 import FileSystemLoader, Template, Environment
@@ -33,4 +42,4 @@ if __name__ == '__main__':
     if not result.wasSuccessful():
         print "Errors found, plugin not generated"
     else:
-        writePlugin("Sample")
+        writePlugin("ListenCD")

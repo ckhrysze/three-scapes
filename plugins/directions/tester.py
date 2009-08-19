@@ -3,13 +3,25 @@ from mock import Mock
 import __builtin__
 __builtin__.world = Mock()
 
-import plugin_generator
+import plugin_generator as pg
 
 
 class PluginGeneratorTest(unittest.TestCase):
-    def testSomething(self):
-        world.note.assert_called_with("Found room North of Center")
-        world.WindowText.assert_called()
+    def testDirections(self):
+        pg.OnPluginCommandEntered("_to_road_portal")
+        world.EvaluateSpeedwalk.assert_called_with("12n (leave/enter) 8n 4e 6n 9w")
+
+    def testReverseDirectionsWithFrom(self):
+        pg.OnPluginCommandEntered("_from_road_portal")
+        world.ReverseSpeedwalk.assert_called_with("12n (leave/enter) 8n 4e 6n 9w")
+
+    def testReverseDirectionsWithReverse(self):
+        pg.OnPluginCommandEntered("_reverse_road_portal")
+        world.ReverseSpeedwalk.assert_called_with("12n (leave/enter) 8n 4e 6n 9w")
+
+    def testShowDirections(self):
+        pg.OnPluginCommandEntered("_show_road_portal")
+        world.Note.assert_called_with("12n (leave/enter) 8n 4e 6n 9w")
 
 def writePlugin(name):
     from jinja2 import FileSystemLoader, Template, Environment
@@ -33,4 +45,4 @@ if __name__ == '__main__':
     if not result.wasSuccessful():
         print "Errors found, plugin not generated"
     else:
-        writePlugin("Sample")
+        writePlugin("Directions")

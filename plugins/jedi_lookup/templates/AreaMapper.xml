@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- Saved on Wednesday, July 08, 2009, 5:23 PM -->
+<!-- MuClient version 4.37 -->
+
+<muclient>
+  <plugin
+    name="AreaMapper"
+    author="Ckhrysze"
+    id="dcc8f91bd3b67dbfcfa86f46"
+    language="Python"
+    purpose=""
+    date_written="2009-07-08 17:22:00"
+    requires="4.37"
+    version="1.0"
+    >
+  </plugin>
+
+
+  <!--  Get our standard constants -->
+
+  <include name="constants.pys"/>
+
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+{{ py_script }}
+]]>
+</script>
+
+</muclient>

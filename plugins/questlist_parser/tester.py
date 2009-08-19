@@ -18,7 +18,7 @@ def writePlugin(name):
 
     loader = FileSystemLoader("templates")
     env = Environment(loader=loader)
-    template = env.get_template("plugin.xml")
+    template = env.get_template("%s.xml" % (name))
 
     plugin_source = open("plugin_generator.py", "r")
     lines = ""
@@ -33,4 +33,4 @@ if __name__ == '__main__':
     if not result.wasSuccessful():
         print "Errors found, plugin not generated"
     else:
-        writePlugin("Sample")
+        writePlugin("KeyPadModes")
